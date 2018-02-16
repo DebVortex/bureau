@@ -186,6 +186,8 @@ class Common(Configuration):
         'django.contrib.admindocs',
         'crispy_forms',
         'rules.apps.AutodiscoverRulesConfig',
+
+        'bureau.apps.core.apps.CoreConfig',
     )
 
     CACHES = values. DictValue({
