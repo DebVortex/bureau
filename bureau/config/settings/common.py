@@ -184,8 +184,6 @@ class Common(Configuration):
         'django.contrib.staticfiles',
         'django.contrib.admin',
         'django.contrib.admindocs',
-        'crispy_forms',
-        'rules.apps.AutodiscoverRulesConfig',
 
         'bureau.apps.core.apps.CoreConfig',
     )
@@ -195,8 +193,6 @@ class Common(Configuration):
             'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         }
     })
-
-    CRISPY_TEMPLATE_PACK = values.Value('bootstrap3')
 
     EMAIL_SUBJECT_PREFIX = '[bureau]'
 
