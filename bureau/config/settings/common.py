@@ -160,8 +160,6 @@ class Common(Configuration):
                     False,
                     environ_name='DJANGO_TEMPLATES_TEMPLATE_DEBUG'
                 ),
-                # Beware before activating this! Grappelli has problems with admin
-                # inlines and the template backend option 'string_if_invalid'.
                 'string_if_invalid': values.Value(
                     '',
                     environ_name='DJANGO_TEMPLATES_STRING_IF_INVALID'
@@ -184,7 +182,6 @@ class Common(Configuration):
         'django.contrib.sites',
         'django.contrib.messages',
         'django.contrib.staticfiles',
-        'grappelli',  # grappelli must be listed before django.contrib.admin!
         'django.contrib.admin',
         'django.contrib.admindocs',
         'crispy_forms',
@@ -198,8 +195,6 @@ class Common(Configuration):
     })
 
     CRISPY_TEMPLATE_PACK = values.Value('bootstrap3')
-
-    GRAPPELLI_ADMIN_TITLE = 'bureau Admin'
 
     EMAIL_SUBJECT_PREFIX = '[bureau]'
 
