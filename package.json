@@ -1,0 +1,9 @@
+{
+  "name": "bureau",
+  "version": "0.1.0",
+  "description": "bureau is a django based (home-)office solution.",
+  "main": "index.js",
+  "repository": "git@github.com:DebVortex/bureau.git",
+  "author": "Max Brauer <max@max-brauer.de>",
+  "license": "BSD"
+}
