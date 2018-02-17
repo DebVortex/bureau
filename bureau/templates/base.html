@@ -9,15 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>bureau - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% block styles %}{% endblock %}
-    {% block js %}{% endblock %}
   </head>
   <body>
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
     {% block content %}
     {% endblock %}
+
+    <script type="text/javascript" src="{% static 'bundles/app.js' %}"></script>
     <!-- bureau 0.1.0 powered by Django {{ django_version }} -->
   </body>
 </html>
