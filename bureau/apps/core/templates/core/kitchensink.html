@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block title %}Overview of CSS classes and how to use them.{% endblock %}
+
+{% block extra_styles %}
+    <style type="text/css">
+    .showcase {
+      border: 1px solid black;
+      padding: 1em;
+    }
+    .info {
+      position: fixed;
+      font-size: 70%;
+      padding: 0.2em;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+      background-color: white;
+    }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+  <h1>Grid</h1>
+</div>
+
+<div class="container">
+  <h2>xsmall</h2>
+  <div class="row">
+    <div class="showcase xsmall-col-12">.xsmall-col-12</div>
+    <div class="showcase xsmall-col-11">.xsmall-col-11</div>
+    <div class="showcase xsmall-col-1">.xsmall-col-1</div>
+    <div class="showcase xsmall-col-10">.xsmall-col-10</div>
+    <div class="showcase xsmall-col-2">.xsmall-col-2</div>
+    <div class="showcase xsmall-col-9">.xsmall-col-9</div>
+    <div class="showcase xsmall-col-3">.xsmall-col-3</div>
+    <div class="showcase xsmall-col-8">.xsmall-col-8</div>
+    <div class="showcase xsmall-col-4">.xsmall-col-4</div>
+    <div class="showcase xsmall-col-7">.xsmall-col-7</div>
+    <div class="showcase xsmall-col-5">.xsmall-col-5</div>
+    <div class="showcase xsmall-col-6">.xsmall-col-6</div>
+    <div class="showcase xsmall-col-6">.xsmall-col-6</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>small</h2>
+  <div class="row">
+    <div class="showcase small-col-12">.small-col-12</div>
+    <div class="showcase small-col-11">.small-col-11</div>
+    <div class="showcase small-col-1">.small-col-1</div>
+    <div class="showcase small-col-10">.small-col-10</div>
+    <div class="showcase small-col-2">.small-col-2</div>
+    <div class="showcase small-col-9">.small-col-9</div>
+    <div class="showcase small-col-3">.small-col-3</div>
+    <div class="showcase small-col-8">.small-col-8</div>
+    <div class="showcase small-col-4">.small-col-4</div>
+    <div class="showcase small-col-7">.small-col-7</div>
+    <div class="showcase small-col-5">.small-col-5</div>
+    <div class="showcase small-col-6">.small-col-6</div>
+    <div class="showcase small-col-6">.small-col-6</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>medium</h2>
+  <div class="row">
+    <div class="showcase medium-col-12">.medium-col-12</div>
+    <div class="showcase medium-col-11">.medium-col-11</div>
+    <div class="showcase medium-col-1">.medium-col-1</div>
+    <div class="showcase medium-col-10">.medium-col-10</div>
+    <div class="showcase medium-col-2">.medium-col-2</div>
+    <div class="showcase medium-col-9">.medium-col-9</div>
+    <div class="showcase medium-col-3">.medium-col-3</div>
+    <div class="showcase medium-col-8">.medium-col-8</div>
+    <div class="showcase medium-col-4">.medium-col-4</div>
+    <div class="showcase medium-col-7">.medium-col-7</div>
+    <div class="showcase medium-col-5">.medium-col-5</div>
+    <div class="showcase medium-col-6">.medium-col-6</div>
+    <div class="showcase medium-col-6">.medium-col-6</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>large</h2>
+  <div class="row">
+    <div class="showcase large-col-12">.large-col-12</div>
+    <div class="showcase large-col-11">.large-col-11</div>
+    <div class="showcase large-col-1">.large-col-1</div>
+    <div class="showcase large-col-10">.large-col-10</div>
+    <div class="showcase large-col-2">.large-col-2</div>
+    <div class="showcase large-col-9">.large-col-9</div>
+    <div class="showcase large-col-3">.large-col-3</div>
+    <div class="showcase large-col-8">.large-col-8</div>
+    <div class="showcase large-col-4">.large-col-4</div>
+    <div class="showcase large-col-7">.large-col-7</div>
+    <div class="showcase large-col-5">.large-col-5</div>
+    <div class="showcase large-col-6">.large-col-6</div>
+    <div class="showcase large-col-6">.large-col-6</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>xlarge</h2>
+  <div class="row">
+    <div class="showcase xlarge-col-12">.xlarge-col-12</div>
+    <div class="showcase xlarge-col-11">.xlarge-col-11</div>
+    <div class="showcase xlarge-col-1">.xlarge-col-1</div>
+    <div class="showcase xlarge-col-10">.xlarge-col-10</div>
+    <div class="showcase xlarge-col-2">.xlarge-col-2</div>
+    <div class="showcase xlarge-col-9">.xlarge-col-9</div>
+    <div class="showcase xlarge-col-3">.xlarge-col-3</div>
+    <div class="showcase xlarge-col-8">.xlarge-col-8</div>
+    <div class="showcase xlarge-col-4">.xlarge-col-4</div>
+    <div class="showcase xlarge-col-7">.xlarge-col-7</div>
+    <div class="showcase xlarge-col-5">.xlarge-col-5</div>
+    <div class="showcase xlarge-col-6">.xlarge-col-6</div>
+    <div class="showcase xlarge-col-6">.xlarge-col-6</div>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Visiblity classes</h1>
+</div>
+
+<div class="container">
+  <h2>Visible only on specific width</h2>
+  <div class="row">
+    <div class="showcase xsmall-col-12 show-xsmall-only">.show-xsmall-only</div>
+    <div class="showcase xsmall-col-12 show-small-only">.show-small-only</div>
+    <div class="showcase xsmall-col-12 show-medium-only">.show-medium-only</div>
+    <div class="showcase xsmall-col-12 show-large-only">.show-large-only</div>
+    <div class="showcase xsmall-col-12 show-xlarge-only">.show-xlarge-only</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Hidden only on specific width</h2>
+  <div class="row">
+    <div class="showcase xsmall-col-12 hide-xsmall">.hide-xsmall</div>
+    <div class="showcase xsmall-col-12 hide-small">.hide-small</div>
+    <div class="showcase xsmall-col-12 hide-medium">.hide-medium</div>
+    <div class="showcase xsmall-col-12 hide-large">.hide-large</div>
+    <div class="showcase xsmall-col-12 hide-xlarge">.hide-xlarge</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Visible only on specific width and up</h2>
+  <div class="row">
+    <div class="showcase xsmall-col-12 show-xsmall-up">.show-xsmall-up</div>
+    <div class="showcase xsmall-col-12 show-small-up">.show-small-up</div>
+    <div class="showcase xsmall-col-12 show-medium-up">.show-medium-up</div>
+    <div class="showcase xsmall-col-12 show-large-up">.show-large-up</div>
+    <div class="showcase xsmall-col-12 show-xlarge-up">.show-xlarge-up</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Visible only on specific width and blow</h2>
+  <div class="row">
+    <div class="showcase xsmall-col-12 show-xsmall-down">.show-xsmall-down</div>
+    <div class="showcase xsmall-col-12 show-small-down">.show-small-down</div>
+    <div class="showcase xsmall-col-12 show-medium-down">.show-medium-down</div>
+    <div class="showcase xsmall-col-12 show-large-down">.show-large-down</div>
+    <div class="showcase xsmall-col-12 show-xlarge-down">.show-xlarge-down</div>
+  </div>
+</div>
+
+<div class="info">
+  <div class="row">
+    <div class="showcase xsmall-col-12 show-xsmall-only">Screen: xsmall</div>
+    <div class="showcase xsmall-col-12 show-small-only">Screen: small</div>
+    <div class="showcase xsmall-col-12 show-medium-only">Screen: medium</div>
+    <div class="showcase xsmall-col-12 show-large-only">Screen: large</div>
+    <div class="showcase xsmall-col-12 show-xlarge-only">Screen: xlarge</div>
+  </div>
+</div>
+{% endblock %}

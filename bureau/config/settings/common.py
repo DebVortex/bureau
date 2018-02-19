@@ -120,11 +120,13 @@ class Common(Configuration):
         # Always use forward slashes, even on Windows.
         # Don't forget to use absolute paths, not relative paths.
         os.path.join(BaseDir.BASE_DIR, 'static'),
+        os.path.join(os.path.dirname(BaseDir.BASE_DIR), 'node_modules', 'normalize.css'),
     )
 
     STATICFILES_FINDERS = values.ListValue([
         'django.contrib.staticfiles.finders.AppDirectoriesFinder',
         'django.contrib.staticfiles.finders.FileSystemFinder',
+        'sass_processor.finders.CssFinder',
         #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
     ])
 
@@ -184,8 +186,10 @@ class Common(Configuration):
         'django.contrib.staticfiles',
         'django.contrib.admin',
         'django.contrib.admindocs',
-        'crispy_forms',
-        'rules.apps.AutodiscoverRulesConfig',
+
+        'sass_processor',
+
+        'bureau.apps.core.apps.CoreConfig',
     )
 
     CACHES = values. DictValue({
@@ -193,8 +197,6 @@ class Common(Configuration):
             'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         }
     })
-
-    CRISPY_TEMPLATE_PACK = values.Value('bootstrap3')
 
     EMAIL_SUBJECT_PREFIX = '[bureau]'
 

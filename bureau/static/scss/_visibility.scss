@@ -1,0 +1,91 @@
+// xsmall only
+@media only screen and (max-width: nth($xsmall-range, 2)) {
+  .hide-xsmall {
+    display: none;
+  }
+
+  .show-small-only, .show-medium-only, .show-large-only, .show-xlarge-only {
+    display: none;
+  }
+
+  .show-small-up, .show-medium-up, .show-large-up, .show-xlarge-up {
+    display: none;
+  }
+
+}
+
+// small only
+@media only screen and (min-width: nth($small-range, 1)) and (max-width: nth($small-range, 2)) {
+  .hide-small {
+    display: none;
+  }
+
+  .show-xsmall-only, .show-medium-only, .show-large-only, .show-xlarge-only {
+    display: none;
+  }
+
+  .show-medium-up, .show-large-up, .show-xlarge-up {
+    display: none;
+  }
+
+  .show-xsmall-down {
+    display: none;
+  }
+
+}
+
+// medium only
+@media only screen and (min-width: nth($medium-range, 1)) and (max-width: nth($medium-range, 2)) {
+  .hide-medium {
+    display: none;
+  }
+
+  .show-xsmall-only, .show-small-only, .show-large-only, .show-xlarge-only {
+    display: none;
+  }
+
+  .show-large-up, .show-xlarge-up {
+    display: none;
+  }
+
+  .show-small-down, .show-xsmall-down {
+    display: none;
+  }
+
+}
+
+// large only
+@media only screen and (min-width: nth($large-range, 1)) and (max-width: nth($large-range, 2)) {
+  .hide-large {
+    display: none;
+  }
+
+  .show-xsmall-only, .show-small-only, .show-medium-only, .show-xlarge-only {
+    display: none;
+  }
+
+  .show-xlarge-up {
+    display: none;
+  }
+
+  .show-medium-down, .show-small-down, .show-xsmall-down {
+    display: none;
+  }
+
+}
+
+// xlarge only
+@media only screen and (min-width: nth($xlarge-range, 1)) and (max-width: nth($xlarge-range, 2)) {
+  .hide-xlarge {
+    display: none;
+  }
+
+  .show-xsmall-only, .show-small-only, .show-medium-only, .show-large-only {
+    display: none;
+  }
+
+  .show-large-down, .show-medium-down, .show-small-down, .show-xsmall-down {
+    display: none;
+  }
+
+}

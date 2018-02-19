@@ -1,0 +1,22 @@
+// Grid settings
+$column-count: 12;
+$column-gap: 1em;
+
+// Breakpoints
+$xsmall-breakpoint: 320px;
+$small-breakpoint: 640px;
+$medium-breakpoint: 1024px;
+$large-breakpoint: 1440px;
+
+// lower and upper bounds for breakpoints
+$xsmall-range:   (0, $xsmall-breakpoint); // 0 to 320px
+$small-range:   ($xsmall-breakpoint + 1px, $small-breakpoint); // 321px to 640px
+$medium-range:  ($small-breakpoint  + 1px, $medium-breakpoint); // 641px to 1024px
+$large-range:   ($medium-breakpoint + 1px, $large-breakpoint); // 1025px to 1440px
+$xlarge-range:  ($large-breakpoint  + 1px, 999999999px); // 1441px to 1920px
+
+// media queries for grid
+$small-up-query: "min-width: #{$xsmall-breakpoint + 1px}";
+$medium-up-query: "min-width: #{$small-breakpoint + 1px}";
+$large-up-query: "min-width: #{$medium-breakpoint + 1px}";
+$xlarge-up-query: "min-width: #{$large-breakpoint + 1px}";

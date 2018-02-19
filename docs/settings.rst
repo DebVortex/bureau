@@ -70,11 +70,6 @@ List of general Django settings from
       - | A dictionary containing the
         | settings for all caches to be used
         | with Django.
-    * - ``CRISPY_TEMPLATE_PACK``
-      - ``'bootstrap3'``
-      - ``DJANGO_CRISPY_TEMPLATE_PACK``
-      - | The default template pack to be
-        | used by `django-crispy-forms <https://github.com/maraujop/django-crispy-forms>`_.
     * - ``DEBUG``
       - ``False``
       - ``DJANGO_DEBUG``
