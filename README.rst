@@ -2,16 +2,14 @@
 bureau
 *******************************
 
-
-.. image:: https://codeship.com/projects/cdcfdf90-f57f-0135-421b-0e3bfea94a32/status?branch=develop
+.. image:: https://img.shields.io/codeship/d6c1ddd0-16a3-0132-5f85-2e35c05e22b1/develop.svg?style=for-the-badge
     :alt: Build Status
 
-
-.. image:: https://codecov.io/gh/DebVortex/bureau/branch/master/graphs/badge.svg?branch=develop
+.. image:: https://img.shields.io/codecov/c/github/DebVortex/bureau/develop.svg
     :target: https://codecov.io/gh/DebVortex/bureau/branch/master
     :alt: Build Status
 
 bureau is a django based (home)office solution.
 
-Detailed installation instructions for this Djangp project can be found in
+Detailed installation instructions for this Django project can be found in
 ``docs/installation.rst``.
