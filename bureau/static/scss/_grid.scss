@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat($column-count, 1fr);
+  grid-gap: $column-gap;
+}
+
+@for $i from 1 through $column-count {
+  .xsmall-col-#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+@media (#{$small-up-query}) {
+  @for $i from 1 through $column-count {
+    .small-col-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@media (#{$medium-up-query}) {
+  @for $i from 1 through $column-count {
+    .medium-col-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@media (#{$large-up-query}) {
+  @for $i from 1 through $column-count {
+    .large-col-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@media (#{$xlarge-up-query}) {
+  @for $i from 1 through $column-count {
+    .xlarge-col-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
