@@ -2,6 +2,8 @@ BUILDDIR ?= _build
 ENV ?= dev
 PORT ?= 8000
 SPHINXOPTS =
+WEBPACK_BIN = node_modules/.bin/webpack
+
 
 define CMDS
 ifeq ($(1), runserver)
@@ -20,6 +22,8 @@ $(eval $(call CMDS, $(cmd)))
 
 help:
 	@echo "Please use 'make <target>' where <target> is one of"
+	@echo "  bundle                   to use webpack to build the JS bundle"
+	@echo "  bundle-watch             to use webpack to build the JS bundle and rebuild on change"
 	@echo "  clean                    to remove all build, test, coverage and Python artifacts (does not remove backups)"
 	@echo "  clean-backups            to remove backup files created by editors and Git"
 	@echo "  clean-build              to remove build artifacts"
@@ -48,6 +52,11 @@ help:
 	@echo "  test-upload              to upload a release to test PyPI using twine"
 	@echo "  upload                   to upload a release using twine"
 
+bundle:
+	$(WEBPACK_BIN)
+
+bundle-watch:
+	$(WEBPACK_BIN) --watch
 
 clean: clean-build clean-docs clean-test clean-pyc
 
