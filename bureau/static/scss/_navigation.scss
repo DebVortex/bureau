@@ -1,0 +1,85 @@
+nav, .nav-toggle-container {
+  background: $nav-background-color;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    line-height: 1.5;
+    padding: 20px;
+    background-color: $nav-background-color;
+  }
+  a {
+    color: $nav-link-color;
+    &, &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+nav li:hover {
+  background-color: $nav-background-alt-color;
+  transition: background-color 0.3s;
+}
+
+.nav-toggle {
+  text-decoration: none;
+  background-color: $nav-background-color;
+}
+
+.nav-toggle-container .nav-toggle {
+  position: relative;
+  padding-left: 1.25em;
+  display: inline-block;
+  width: 2.1em;
+  height: 1.9em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 2em;
+    height: 0.3em;
+    background: $nav-link-color;
+    box-shadow:
+      0 -0.6em 0 0 $nav-link-color,
+      0 0.6em 0 0 $nav-link-color;
+  }
+}
+
+@media only screen and (min-width: nth($large-range, 1)) {
+  .nav-toggle, .nav-toggle-container {
+    display: none;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: nth($medium-range, 2)) {
+  nav .nav-toggle {
+    float: right;
+    font-size: 1.5em;
+    border: 2px solid $nav-link-color;
+    width: 34px;
+    height: 31px;
+    text-align: center;
+    line-height: 1.1;
+    margin: 0.7em;
+  }
+  nav {
+      position: absolute; /* or choose `absolute` depending on desired behavior*/
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      left: -340px;
+      transition: transform .3s ease-in-out;
+  }
+  nav:target {
+    transform: translateX(340px);
+  }
+
+}
