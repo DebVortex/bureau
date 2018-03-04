@@ -1,8 +1,20 @@
 // Colors
-$nav-background-color: #136fd2;
-$nav-background-alt-color: darken($nav-background-color, 10%);
+$darken-percentage: 10%;
 
-$nav-link-color: #d0cfc5;
+$primary-font-color: #2C3531;
+$primary-color: #116466;
+$primary-color-darken: darken($primary-color, $darken-percentage);
+
+$secondary-font-color: #D9B08C;
+$secondary-color: #FFCB9A;
+$secondary-color-darken: darken($secondary-color, $darken-percentage);
+
+$tertiary-font-color: #D1E8E2;
+
+// Nav settings
+$nav-background-color: $primary-color;
+$nav-background-alt-color: $primary-color-darken;
+$nav-link-color: $tertiary-font-color;
 
 // Grid settings
 $column-count: 12;
