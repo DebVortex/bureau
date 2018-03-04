@@ -8,6 +8,9 @@
   display: grid;
   grid-template-columns: repeat($column-count, 1fr);
   grid-gap: $column-gap;
+  .container {
+    width: 100%;
+  }
 }
 
 @for $i from 1 through $column-count {
@@ -50,10 +53,15 @@
 }
 
 @media (#{$large-up-query}) {
+  .container {
+    width: 1024px;
+  }
+  .container-full {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   @for $i from 1 through $column-count {
-    .container {
-      width: 1024px;
-    }
     .large-col-#{$i} {
       grid-column: span #{$i};
     }
